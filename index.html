@@ -10,105 +10,101 @@
 .intro-card{background:#fff;border:1px solid var(--border);border-radius:22px;padding:28px 30px;margin:20px 0;box-shadow:0 6px 25px #42236b0b}.intro-card[hidden]{display:none!important}.intro-card h2{font-size:27px;margin:6px 0 10px}.intro-steps{display:grid;gap:12px;padding:0;list-style:none;counter-reset:step}.intro-steps li{background:var(--pale);border-radius:14px;padding:12px 15px;counter-increment:step}.intro-steps li:before{content:counter(step);display:inline-grid;place-items:center;width:28px;height:28px;background:var(--purple);color:#fff;border-radius:9px;font-weight:900;margin-right:10px}.intro-warning{color:#6624c4;font-weight:700}.question[hidden]{display:none!important}.question-nav{display:flex;gap:9px;flex-wrap:wrap;margin:16px 0}.question-nav button{width:42px;height:42px;border-radius:12px;border:2px solid #e9defa;background:white;color:#6624c4;font-weight:800;cursor:pointer}.question-nav button.current{background:#833ae0;color:white;border-color:#833ae0}.question-nav button.answered:not(.current){background:#e7ffd0;border-color:#9ed65b;color:#315e12}.question-nav button:focus-visible,.nav-button:focus-visible{outline:3px solid #242038;outline-offset:3px}.nav-button{border:2px solid #833ae0;border-radius:15px;padding:14px 22px;background:white;color:#833ae0;font:800 16px system-ui;cursor:pointer}.nav-button:disabled{opacity:.45;cursor:not-allowed}.step-note{color:#706981;font-size:14px;font-weight:700;margin-top:12px}@media(max-width:600px){.question-nav button{width:39px;height:39px}.nav-button{flex:1}.actions{gap:10px}}
 .compact-hero{padding:17px 24px;border-radius:20px}.compact-hero:after{display:none}.compact-hero .brand{font-size:14px}.compact-hero .stat{font-size:14px}.intro-identity{margin:14px 0 22px;padding:17px;border-radius:15px;background:var(--pale)}.intro-card .section-label{margin-top:6px}.question-nav{margin:20px 0 12px}.question{margin:12px 0;padding:28px 30px}.question-head .points{display:none}.question-head .mission{background:none;padding:0}.step-note{margin:0 0 12px}.actions{justify-content:space-between;margin:16px 0}.question h3{font-size:21px}.intro-card{margin:12px 0}.question-nav button:first-child{border-style:dashed}@media(max-width:600px){.compact-hero{padding:14px 16px}.question{padding:20px}.intro-identity{padding:12px}}
 </style>
-</head>
+<style>.intro-card{background:#fff;border:1px solid var(--border);border-radius:22px;padding:28px 30px;margin:20px 0;box-shadow:0 6px 25px #42236b0b}.intro-card[hidden],.question[hidden]{display:none!important}.intro-card h2{font-size:27px;margin:6px 0 10px}.intro-steps{display:grid;gap:12px;padding:0;list-style:none;counter-reset:step}.intro-steps li{background:var(--pale);border-radius:14px;padding:12px 15px;counter-increment:step}.intro-steps li:before{content:counter(step);display:inline-grid;place-items:center;width:28px;height:28px;background:var(--purple);color:#fff;border-radius:9px;font-weight:900;margin-right:10px}.intro-warning{color:#6624c4;font-weight:700}.question-nav{display:flex;gap:9px;flex-wrap:wrap;margin:20px 0 12px}.question-nav button{width:42px;height:42px;border-radius:12px;border:2px solid #e9defa;background:white;color:#6624c4;font-weight:800;cursor:pointer}.question-nav button.current{background:#833ae0;color:white;border-color:#833ae0}.question-nav button.answered:not(.current){background:#e7ffd0;border-color:#9ed65b;color:#315e12}.question-nav button:focus-visible,.nav-button:focus-visible{outline:3px solid #242038;outline-offset:3px}.nav-button{border:2px solid #833ae0;border-radius:15px;padding:14px 22px;background:white;color:#833ae0;font:800 16px system-ui;cursor:pointer}.nav-button:disabled{opacity:.45;cursor:not-allowed}.step-note{color:#706981;font-size:14px;font-weight:700;margin:0 0 12px}.compact-hero{padding:17px 24px;border-radius:20px}.compact-hero:after{display:none}.intro-identity{margin:14px 0 22px;padding:17px;border-radius:15px;background:var(--pale)}.question{margin:12px 0;padding:28px 30px}.question-head .points{display:none}.question-head .mission{background:none;padding:0}.question h3{font-size:21px}.actions{justify-content:space-between;margin:16px 0}.answer-hint{font-size:13px;color:var(--muted);margin:8px 0 0}.footer{text-align:center;color:#82758d;font-size:13px;margin-top:32px}.time-low{background:#ffe0e5!important;color:#ad293e!important}@media(max-width:600px){.intro-card{padding:20px}.question-nav button{width:39px;height:39px}.nav-button{flex:1}.question{padding:20px}.intro-identity{padding:12px}.compact-hero{padding:14px 16px}.actions{gap:10px}}</style></head>
 <body>
 <main class="wrap">
-<header class="hero compact-hero"><div class="top"><div class="brand"><span class="brand-icon">&lt;/&gt;</span> IT OLYMPIAD</div><span class="stat timer" id="timer">⏱ 45:00</span></div></header>
+<header class="hero compact-hero"><div class="top"><div class="brand"><span class="brand-icon">&lt;/&gt;</span> IT OLYMPIAD</div><span class="stat timer" id="timer">⏱ 60:00</span></div></header>
 <nav class="question-nav" id="questionNav" aria-label="Переход между заданиями"></nav>
-<div class="step-note" id="stepNote" aria-live="polite">Задание 1 из 10</div>
-<section class="intro-card" id="intro"><div class="identity intro-identity"><label>Имя<input id="firstName" type="text" maxlength="80" placeholder="Твоё имя" autocomplete="given-name" required></label><label>Фамилия<input id="lastName" type="text" maxlength="80" placeholder="Твоя фамилия" autocomplete="family-name" required></label></div><p class="section-label">🎮 МИССИЯ 00 / ИНСТРУКЦИЯ</p><h2>Готов к IT-приключению? 🚀</h2><p>Перед стартом ознакомься с правилами олимпиады.</p><ol class="intro-steps"><li>Введи имя и фамилию здесь, на слайде 0.</li><li>У тебя 45 минут на 10 заданий. Следи за таймером!</li><li>Переключайся кнопками «Назад», «Далее» или номерами заданий.</li><li>Зелёным отмечаются задания, где уже есть ответ. Его можно изменить до отправки.</li><li>Развёрнутые ответы проверит преподаватель.</li><li>После последнего задания нажми «Завершить и отправить». Перед уходом убедись у преподавателя, что результат записался.</li></ol><p class="intro-warning">💾 Ответы сохраняются в этом браузере при обновлении страницы. Не используй режим инкогнито и не очищай данные сайта до окончания.</p><p>Олимпиаду следует отправить только один раз.</p><button type="button" class="submit" id="startQuiz">Начать олимпиаду →</button></section><form id="quiz"></form>
+<div class="step-note" id="stepNote" aria-live="polite">Правила · 0</div>
+<section class="intro-card" id="intro">
+ <div class="identity intro-identity"><label>Имя<input id="firstName" type="text" maxlength="80" placeholder="Твоё имя" autocomplete="given-name" required></label><label>Фамилия<input id="lastName" type="text" maxlength="80" placeholder="Твоя фамилия" autocomplete="family-name" required></label></div>
+ <p class="section-label">🎮 МИССИЯ 00 / ИНСТРУКЦИЯ</p><h2>Готов к IT-приключению? 🚀</h2><p>Перед стартом ознакомься с правилами олимпиады.</p>
+ <ol class="intro-steps"><li>Введи имя и фамилию, затем нажми «Начать олимпиаду».</li><li>На 30 заданий отведено 60 минут. Таймер запустится после старта.</li><li>Переходи между заданиями кнопками или с помощью номеров вверху.</li><li>Зелёным отмечаются задания, на которые уже дан ответ. Его можно изменить до отправки.</li><li>Задание 29 требует развёрнутого ответа и будет проверено преподавателем. Остальные задания с однозначным ответом проверяются автоматически.</li><li>После задания 30 нажми «Завершить и отправить». Не закрывай страницу, пока не появится сообщение об отправке.</li></ol>
+ <p class="intro-warning">💾 Ответы сохраняются в этом браузере при обновлении страницы. Не очищай данные сайта и не используй режим инкогнито.</p><p>Олимпиаду следует отправить только один раз.</p><button type="button" class="submit" id="startQuiz">Начать олимпиаду →</button>
+</section>
+<form id="quiz"></form>
 <div class="actions"><button class="nav-button" id="previous" type="button">← Назад</button><button class="nav-button" id="next" type="button">Далее →</button><button class="submit" id="submit" type="button" hidden>Завершить и отправить →</button></div>
 <div id="status" role="status" aria-live="polite"></div>
+<p class="footer">IT OLYMPIAD · 30 заданий · 60 минут</p>
 </main>
 <script>
-// Адрес опубликованного веб-приложения Google Apps Script.
+'use strict';
+// Адрес текущего веб-приложения Google Apps Script. Не меняйте без необходимости.
 const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyXvSar30TtAZNlPeYv3waXGeCVtL_PcATVLGfgbS68mxLk1ozAFyO5R3JEH5Jv2zPk-g/exec';
+const DURATION_MS = 60 * 60 * 1000;
+const STORAGE_KEY = 'it-olympiad-draft-v3';
+// choice: один вариант; short: краткий ответ; long: развёрнутый ответ.
+// Баллы за q29 (6) выставляются преподавателем. Автоматически можно получить до 54 баллов.
 const QUESTIONS = [
-{id:'q1',points:2,type:'choice',text:'Какое устройство выполняет арифметические и логические операции?',options:['Монитор','Процессор','Клавиатура','Принтер']},
-{id:'q2',points:2,type:'choice',text:'Сколько бит в одном байте?',options:['4','8','16','32']},
-{id:'q3',points:2,type:'choice',text:'Что выведет Python: print(2 ** 3 + 1)?',options:['7','9','16','24']},
-{id:'q4',points:2,type:'choice',text:'Какое условие истинно при x = 7?',options:['x < 5','x == 6','x > 5 and x < 10','x % 2 == 0']},
-{id:'q5',points:2,type:'choice',text:'Сколько раз выполнится цикл for i in range(2, 9, 2)?',options:['3','4','5','7']},
-{id:'q6',points:3,type:'short',text:'Запиши десятичное значение двоичного числа 10110.'},
-{id:'q7',points:3,type:'short',text:'Чему равно значение переменной s после выполнения: s=0; for i in range(1,5): s+=i ?'},
-{id:'q8',points:4,type:'short',text:'Робот стоит в точке (0,0). Он сделал 3 шага вправо, 2 вверх, 5 влево и 1 вниз. Запиши конечные координаты в формате x,y.'},
-{id:'q9',points:5,type:'long',text:'Объясни, чем цикл for отличается от цикла while. Приведи пример задачи, для которой удобен каждый из них.'},
-{id:'q10',points:5,type:'long',text:'Напиши алгоритм или программу на Python, которая находит наибольшее из трёх введённых чисел. Объясни решение.'}
+ {id:'q1',points:1,type:'choice',text:'Какой пример показывает обработку информации?',options:['Человек читает расписание','Компьютер сортирует список фамилий по алфавиту','Принтер печатает готовый документ','Ученик запоминает номер кабинета']},
+ {id:'q2',points:1,type:'choice',text:'Какое устройство компьютера выполняет команды программ и обрабатывает данные?',options:['Монитор','Клавиатура','Процессор','Принтер']},
+ {id:'q3',points:1,type:'choice',text:'Какой из вариантов является примером полного пути к файлу в Windows?',options:['Фото','Документы/Фото','C:\\Users\\Alex\\Documents\\photo.png','photo.png']},
+ {id:'q4',points:1,type:'choice',text:'Из каких элементов состоит растровое изображение?',options:['Из пикселей','Из только геометрических форм','Из слайдов','Из строк программного кода']},
+ {id:'q5',points:1,type:'short',text:'Алфавит состоит из 8 различных символов. Сколько бит нужно минимум, чтобы закодировать один символ такого алфавита?'},
+ {id:'q6',points:1,type:'choice',text:'Какой пароль из перечисленных наиболее надёжен?',options:['12345678','qwerty2026','Victoria2000','R7!mQ2#zLp9']},
+ {id:'q7',points:1,type:'short',text:'В таблице 4 строки с данными и 1 строка заголовков. В каждой строке по 5 ячеек. Сколько всего ячеек заполнено в таблице?'},
+ {id:'q8',points:1,type:'choice',text:'Какой вариант лучше всего подходит в качестве модели реального дерева?',options:['Список случайных чисел','Рисунок дерева с обозначенными стволом, ветвями и листьями','Набор музыкальных нот','Таблица умножения']},
+ {id:'q9',points:2,type:'short',text:'Робот начинает в точке (0, 0), направлен вправо. Он проходит 3 клетки вперёд, поворачивает налево и проходит 2 клетки. Запиши конечные координаты в формате x,y.'},
+ {id:'q10',points:2,type:'choice',text:'Пусть A = 0, B = 1. Чему равно выражение (A AND NOT B) OR B?',options:['0','1','Выражение невозможно вычислить','Зависит от языка программирования']},
+ {id:'q11',points:2,type:'short',text:'Определи значения x и y после выполнения алгоритма. Запиши ответ в формате x=…, y=….',code:'x = 4\ny = 3\nx = x + 3\ny = y + 1'},
+ {id:'q12',points:2,type:'choice',text:'При A = 1 и B = 0 чему равно логическое выражение A AND NOT B?',options:['Ложь (0)','Истина (1)','Не определено','Всегда 0']},
+ {id:'q13',points:2,type:'choice',text:'Как называется точная последовательность команд, предназначенная для решения задачи?',options:['Модель','Алгоритм','Файл','Алфавит']},
+ {id:'q14',points:2,type:'short',text:'Продолжи последовательность: 5, 8, 11, … Запиши следующие два числа через запятую.'},
+ {id:'q15',points:2,type:'choice',text:'Какое свойство алгоритма означает, что он должен завершиться после конечного числа шагов?',options:['Массовость','Понятность','Дискретность','Конечность']},
+ {id:'q16',points:2,type:'short',text:'Переведи десятичное число 45 в двоичную систему счисления.'},
+ {id:'q17',points:2,type:'short',text:'Переведи двоичное число 101101 в десятичную систему счисления.'},
+ {id:'q18',points:2,type:'short',text:'Какое минимальное количество бит нужно для кодирования одного символа алфавита из 100 различных символов?'},
+ {id:'q19',points:2,type:'short',text:'Файл занимает 120 байт. Сколько это бит? Укажи только число бит.'},
+ {id:'q20',points:2,type:'short',text:'Переведи шестнадцатеричное число 2F в десятичную систему счисления.'},
+ {id:'q21',points:2,type:'short',text:'Сложи двоичные числа 1011 и 1101. Запиши результат в двоичной системе.'},
+ {id:'q22',points:2,type:'short',text:'Нужно закодировать 20 различных букв кодами одинаковой длины. Какое минимальное количество бит потребуется для кода одной буквы?'},
+ {id:'q23',points:2,type:'short',text:'Выполни целочисленное деление 17 на 5. Запиши частное и остаток в формате частное;остаток.'},
+ {id:'q24',points:2,type:'short',text:'Чему равна сумма чисел от 1 до 4 включительно?'},
+ {id:'q25',points:2,type:'choice',text:'Для числа x = 15 какое утверждение верно?',options:['Число делится на 2, но не делится на 3','Число делится на 3, но не делится на 2','Число делится на 2 и на 3','Число не делится ни на 2, ни на 3']},
+ {id:'q26',points:2,type:'short',text:'Чему равен остаток от деления 23 на 5?'},
+ {id:'q27',points:2,type:'short',text:'Найди сумму цифр числа 5832.'},
+ {id:'q28',points:2,type:'short',text:'Найди НОД чисел 48 и 18.'},
+ {id:'q29',points:6,type:'long',text:'Опиши алгоритм, который определяет, является ли введённое натуральное число простым. Укажи, какие проверки нужно выполнить, и объясни, почему алгоритм работает.'},
+ {id:'q30',points:6,type:'short',text:'Для строки Informatika2026 укажи: количество букв, количество цифр и строку в обратном порядке. Ответ запиши в формате буквы;цифры;перевёрнутая строка.'}
 ];
-const quiz=document.getElementById('quiz');
-const codeSamples={q3:'print(2 ** 3 + 1)',q4:'x = 7',q5:'for i in range(2, 9, 2):\n    print(i)',q7:'s = 0\nfor i in range(1, 5):\n    s += i'};
-QUESTIONS.forEach((q,i)=>{
- const section=document.createElement('section');section.className='question';section.hidden=i!==0;section.id='section-'+q.id;
- const head=document.createElement('div');head.className='question-head';
- const mission=document.createElement('span');mission.className='mission';mission.textContent=`МИССИЯ ${String(i+1).padStart(2,'0')} / 10`;
- const points=document.createElement('span');points.className='points';points.textContent=`⭐ ${q.points} балл(ов)`;head.append(mission,points);section.append(head);
- const title=document.createElement('h3');title.textContent=q.text;section.append(title);
- if(codeSamples[q.id]){const code=document.createElement('pre');code.className='code';code.textContent=codeSamples[q.id];section.append(code)}
+const quiz = document.getElementById('quiz');
+const nav = document.getElementById('questionNav');
+const codeSamples = {};
+QUESTIONS.forEach((q, i) => {
+ const section = document.createElement('section'); section.className='question'; section.hidden=true; section.id='section-'+q.id;
+ const head=document.createElement('div'); head.className='question-head';
+ const mission=document.createElement('span'); mission.className='mission'; mission.textContent=`МИССИЯ ${String(i+1).padStart(2,'0')} / ${QUESTIONS.length}`;
+ const points=document.createElement('span'); points.className='points'; points.textContent=`⭐ ${q.points} балл(ов)`; head.append(mission,points); section.append(head);
+ const title=document.createElement('h3'); title.textContent=q.text; section.append(title);
+ if(q.code){const code=document.createElement('pre');code.className='code';code.textContent=q.code;section.append(code)}
  if(q.type==='choice'){
-  const options=document.createElement('div');options.className='options';q.options.forEach((option,j)=>{
-   const label=document.createElement('label');const radio=document.createElement('input');radio.type='radio';radio.name=q.id;radio.value=String(j);
-   label.append(radio,document.createTextNode(' '+option));options.append(label);
-  });section.append(options);
- }else{
-  const field=document.createElement(q.type==='long'?'textarea':'input');if(q.type!=='long')field.type='text';field.id=q.id;field.maxLength=q.type==='long'?4000:150;
-  field.placeholder=q.type==='long'?'Напиши своё решение здесь…':'Введи свой ответ…';field.setAttribute('aria-label',`Ответ на задание ${i+1}`);section.append(field);
+  const options=document.createElement('div');options.className='options';q.options.forEach((option,j)=>{const label=document.createElement('label');const radio=document.createElement('input');radio.type='radio';radio.name=q.id;radio.value=String(j);radio.setAttribute('aria-label',option);label.append(radio,document.createTextNode(' '+option));options.append(label)});section.append(options);
+ } else {
+  const field=document.createElement(q.type==='long'?'textarea':'input');if(q.type!=='long')field.type='text';field.id=q.id;field.maxLength=q.type==='long'?4000:500;field.placeholder=q.type==='long'?'Напиши ход решения здесь…':'Введи свой ответ…';field.setAttribute('aria-label',`Ответ на задание ${i+1}`);section.append(field);
+  if(q.type==='long'){const hint=document.createElement('p');hint.className='answer-hint';hint.textContent='Ответ будет оценён преподавателем.';section.append(hint)}
  }
  quiz.append(section);
 });
-let finished=false;
-let currentQuestion=-1;
-const STORAGE_KEY='it-olympiad-draft-v2';
-let saved={};try{saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}')||{}}catch(e){saved={}}
-const startedAt=Number(saved.startedAt)||null;
+[{id:'intro'},...QUESTIONS].forEach((q,i)=>{const b=document.createElement('button');b.type='button';b.textContent=String(i);b.setAttribute('aria-label',i===0?'Правила и данные участника':`Перейти к заданию ${i}`);b.addEventListener('click',()=>showQuestion(i-1));nav.append(b)});
+let finished=false, currentQuestion=-1, saved={};
+try{saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}')||{}}catch(e){saved={}}
 let deadline=Number(saved.deadline)||null;
 function collectAnswers(){const answers={};QUESTIONS.forEach(q=>{answers[q.id]=q.type==='choice'?(document.querySelector(`input[name="${q.id}"]:checked`)?.value??''):document.getElementById(q.id).value.trim()});return answers}
-function saveDraft(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify({firstName:document.getElementById('firstName').value,lastName:document.getElementById('lastName').value,answers:collectAnswers(),deadline,startedAt:deadline?deadline-45*60*1000:null,currentQuestion,submitted:!!saved.submitted}))}catch(e){document.getElementById('status').textContent='Не удалось сохранить черновик. Проверь настройки браузера.'}}
-function restoreDraft(){document.getElementById('firstName').value=saved.firstName||'';document.getElementById('lastName').value=saved.lastName||'';QUESTIONS.forEach(q=>{const v=saved.answers?.[q.id];if(v===undefined)return;if(q.type==='choice'){const radio=document.querySelector(`input[name="${q.id}"][value="${v}"]`);if(radio)radio.checked=true}else document.getElementById(q.id).value=v});}
-restoreDraft();
-const nav=document.getElementById('questionNav');
-[{id:'intro'},...QUESTIONS].forEach((q,i)=>{const b=document.createElement('button');b.type='button';b.textContent=String(i);b.setAttribute('aria-label',i===0?'Правила и данные участника':`Перейти к заданию ${i}`);b.addEventListener('click',()=>showQuestion(i-1));nav.append(b)});
+function saveDraft(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify({firstName:document.getElementById('firstName').value,lastName:document.getElementById('lastName').value,answers:collectAnswers(),deadline,currentQuestion,submitted:!!saved.submitted}))}catch(e){document.getElementById('status').textContent='Не удалось сохранить черновик. Проверь настройки браузера.'}}
+function restoreDraft(){document.getElementById('firstName').value=saved.firstName||'';document.getElementById('lastName').value=saved.lastName||'';QUESTIONS.forEach(q=>{const v=saved.answers?.[q.id];if(v===undefined)return;if(q.type==='choice'){const match=[...document.querySelectorAll(`input[name="${q.id}"]`)].find(r=>r.value===String(v));if(match)match.checked=true}else document.getElementById(q.id).value=v})}
 function isAnswered(q){return q.type==='choice'?!!document.querySelector(`input[name="${q.id}"]:checked`):!!document.getElementById(q.id).value.trim()}
-function showQuestion(index){
- if(finished)return;
- currentQuestion=Math.max(-1,Math.min(index,QUESTIONS.length-1));
- document.getElementById('intro').hidden=currentQuestion>=0;
- QUESTIONS.forEach((q,i)=>{document.getElementById('section-'+q.id).hidden=i!==currentQuestion});
- [...nav.children].forEach((button,i)=>{
-  button.classList.toggle('current',i===currentQuestion+1);
-  button.classList.toggle('answered',i>0&&isAnswered(QUESTIONS[i-1]));
-  if(i===currentQuestion+1)button.setAttribute('aria-current','step');else button.removeAttribute('aria-current');
- });
- document.getElementById('previous').hidden=currentQuestion<0;
- document.getElementById('previous').disabled=false;
- document.getElementById('next').hidden=currentQuestion===QUESTIONS.length-1;
- document.getElementById('submit').hidden=currentQuestion!==QUESTIONS.length-1;
- document.getElementById('stepNote').textContent=currentQuestion<0?'Правила · 0':`Задание ${currentQuestion+1} из ${QUESTIONS.length}`;
- saveDraft();
- document.getElementById('stepNote').scrollIntoView({behavior:'smooth',block:'start'});
-}
-document.getElementById('previous').addEventListener('click',()=>showQuestion(currentQuestion-1));
-document.getElementById('next').addEventListener('click',()=>showQuestion(currentQuestion+1));
-function updateProgress(){let done=0;QUESTIONS.forEach(q=>{const value=q.type==='choice'?document.querySelector(`input[name="${q.id}"]:checked`)?.value:document.getElementById(q.id).value.trim();if(value!==undefined&&value!=='')done++});document.getElementById('progressText').textContent=`${done} из ${QUESTIONS.length}`;document.getElementById('progressFill').style.width=`${done/QUESTIONS.length*100}%`;[...nav.children].forEach((b,i)=>b.classList.toggle('answered',i>0&&isAnswered(QUESTIONS[i-1])))}
+function updateProgress(){let done=0;QUESTIONS.forEach(q=>{if(isAnswered(q))done++});[...nav.children].forEach((b,i)=>b.classList.toggle('answered',i>0&&isAnswered(QUESTIONS[i-1])));document.getElementById('stepNote').dataset.progress=`${done}/${QUESTIONS.length}`}
+function showQuestion(index){if(finished)return;if(index>=0&&!deadline){document.getElementById('status').textContent='Сначала введи имя и фамилию и нажми «Начать олимпиаду».';return}currentQuestion=Math.max(-1,Math.min(index,QUESTIONS.length-1));document.getElementById('intro').hidden=currentQuestion>=0;QUESTIONS.forEach((q,i)=>{document.getElementById('section-'+q.id).hidden=i!==currentQuestion});[...nav.children].forEach((button,i)=>{button.classList.toggle('current',i===currentQuestion+1);button.classList.toggle('answered',i>0&&isAnswered(QUESTIONS[i-1]));if(i===currentQuestion+1)button.setAttribute('aria-current','step');else button.removeAttribute('aria-current')});document.getElementById('previous').hidden=currentQuestion<0;document.getElementById('next').hidden=currentQuestion===QUESTIONS.length-1||currentQuestion<0;document.getElementById('submit').hidden=currentQuestion!==QUESTIONS.length-1;document.getElementById('stepNote').textContent=currentQuestion<0?'Правила · 0':`Задание ${currentQuestion+1} из ${QUESTIONS.length}`;saveDraft();window.scrollTo({top:0,behavior:'smooth'})}
+restoreDraft();
+document.getElementById('previous').addEventListener('click',()=>showQuestion(currentQuestion-1));document.getElementById('next').addEventListener('click',()=>showQuestion(currentQuestion+1));
 quiz.addEventListener('input',()=>{updateProgress();saveDraft()});quiz.addEventListener('change',()=>{updateProgress();saveDraft()});document.querySelectorAll('#firstName,#lastName').forEach(el=>el.addEventListener('input',saveDraft));
-document.getElementById('startQuiz').addEventListener('click',()=>{if(!document.getElementById('firstName').value.trim()||!document.getElementById('lastName').value.trim()){document.getElementById('status').textContent='Сначала введи имя и фамилию.';return}if(!deadline){deadline=Date.now()+45*60*1000}showQuestion(0);renderTimer()});
-updateProgress();if(saved.submitted){showQuestion(-1);finished=true;document.getElementById('intro').innerHTML='<h2>Ответы уже отправлялись с этого браузера</h2><p>Обратись к преподавателю, если нужно проверить запись или повторить попытку.</p>';document.querySelectorAll('input,textarea,.question-nav button').forEach(el=>el.disabled=true);document.getElementById('next').hidden=true}else if(deadline){showQuestion(Number.isInteger(saved.currentQuestion)&&saved.currentQuestion>=0?saved.currentQuestion:0)}else showQuestion(-1);
-function renderTimer(){const remaining=deadline?Math.max(0,Math.ceil((deadline-Date.now())/1000)):45*60;const el=document.getElementById('timer');el.textContent=`⏱ ${String(Math.floor(remaining/60)).padStart(2,'0')}:${String(remaining%60).padStart(2,'0')}`;el.classList.toggle('time-low',!!deadline&&remaining<=300);return remaining}
+document.getElementById('startQuiz').addEventListener('click',()=>{if(!document.getElementById('firstName').value.trim()||!document.getElementById('lastName').value.trim()){document.getElementById('status').textContent='Сначала введи имя и фамилию.';return}if(!deadline)deadline=Date.now()+DURATION_MS;showQuestion(0);renderTimer();saveDraft()});
+function renderTimer(){const remaining=deadline?Math.max(0,Math.ceil((deadline-Date.now())/1000)):DURATION_MS/1000;const el=document.getElementById('timer');el.textContent=`⏱ ${String(Math.floor(remaining/60)).padStart(2,'0')}:${String(remaining%60).padStart(2,'0')}`;el.classList.toggle('time-low',!!deadline&&remaining<=300);return remaining}
 const timer=setInterval(()=>{if(finished||!deadline)return;if(renderTimer()<=0){clearInterval(timer);send()}},1000);renderTimer();
-async function send(){
- if(finished)return;
- const firstName=document.getElementById('firstName').value.trim(),lastName=document.getElementById('lastName').value.trim();const status=document.getElementById('status');
- if(!firstName||!lastName){showQuestion(-1);status.textContent='Укажи имя и фамилию на слайде 0.';return}
- if(!SCRIPT_URL.startsWith('https://script.google.com/')){status.textContent='Преподаватель ещё не настроил адрес отправки.';return}
- const answers=collectAnswers();
- const payload={firstName,lastName,answers};const button=document.getElementById('submit');button.disabled=true;status.textContent='Отправляем ответы…';
- try{
-  // text/plain избегает CORS preflight. no-cors не позволяет прочитать подтверждение сервера.
-  await fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)});
-  finished=true;clearInterval(timer);saved.submitted=true;saveDraft();document.querySelectorAll('input,textarea,.nav-button,.question-nav button').forEach(el=>el.disabled=true);document.getElementById('submit').hidden=true;
-  status.textContent='Запрос отправлен. Подтвердите у преподавателя, что результат появился в таблице.';
- }catch(err){button.disabled=false;status.textContent='Не удалось отправить ответы. Проверьте интернет и повторите попытку.'}
-}
+function lockPage(){document.querySelectorAll('input,textarea,.nav-button,.question-nav button,#startQuiz').forEach(el=>el.disabled=true);document.getElementById('submit').hidden=true;document.getElementById('next').hidden=true;document.getElementById('previous').hidden=true}
+async function send(){if(finished)return;const firstName=document.getElementById('firstName').value.trim(),lastName=document.getElementById('lastName').value.trim(),status=document.getElementById('status');if(!firstName||!lastName){showQuestion(-1);status.textContent='Укажи имя и фамилию на стартовом экране.';return}if(!SCRIPT_URL.startsWith('https://script.google.com/')){status.textContent='Не настроен адрес отправки.';return}const answers=collectAnswers(),payload={firstName,lastName,answers};const button=document.getElementById('submit');button.disabled=true;status.textContent='Отправляем ответы…';try{await fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)});finished=true;clearInterval(timer);saved.submitted=true;saveDraft();lockPage();status.textContent='Запрос отправлен. Поскольку браузер не получает подтверждение от сервера, попроси преподавателя проверить появление результата в таблице.'}catch(err){button.disabled=false;status.textContent='Не удалось отправить ответы. Проверь интернет и повтори попытку.'}}
 document.getElementById('submit').addEventListener('click',send);
+if(saved.submitted){finished=true;document.getElementById('intro').innerHTML='<h2>Ответы уже отправлялись с этого браузера</h2><p>Обратись к преподавателю, если нужно проверить запись или повторить попытку.</p>';document.getElementById('intro').hidden=false;document.getElementById('quiz').hidden=true;lockPage();document.getElementById('stepNote').textContent='Попытка завершена';document.querySelectorAll('#questionNav button').forEach(b=>b.disabled=true)}else if(deadline){if(Date.now()>=deadline){showQuestion(QUESTIONS.length-1);send()}else showQuestion(Number.isInteger(saved.currentQuestion)&&saved.currentQuestion>=0?saved.currentQuestion:0)}else showQuestion(-1);
 </script>
 </body>
 </html>
